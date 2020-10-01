@@ -1,6 +1,6 @@
-# {{DECKDECKGO_TITLE}}
+# OSDC Virtual Summit 2020
 
-{{DECKDECKGO_DESCRIPTION}} 
+A virtual event for the Opensource.com Correspondents 
 
 ## Table of contents
 
@@ -11,15 +11,15 @@
 
 ## Slides
 
-🔗 [https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}}](https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}})
+🔗 [https://beta.deckdeckgo.io/jennwike/osdc-virtual-summit-2020/](https://beta.deckdeckgo.io/jennwike/osdc-virtual-summit-2020/)
 
 ## Usage
 
 💻 To get started locally with this presentation, clone this repo and install its dependencies.
 
 ```
-git clone {{DECKDECKGO_GITHUB_REPO_URL}}
-cd {{DECKDECKGO_GITHUB_REPO_NAME}}
+git clone https://github.com/JenWike/osdc-virtual-summit-2020
+cd osdc-virtual-summit-2020
 npm install
 ```
 
