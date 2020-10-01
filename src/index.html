@@ -46,6 +46,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&amp;family=Open+Sans">
     <style>
         :root {
             background: #ffffff;
@@ -81,32 +82,65 @@
 <body>
     <ion-app class="loading">
         <ion-content force-overscroll="false" scroll-y="false">
-            <deckgo-deck style="--color:rgba(0,0,0,1); --background:rgba(31, 187, 214,1);" id="slider">
+            <deckgo-deck style="--color:rgba(0,0,0,1); --background:rgba(31, 187, 214,1); font-family: &quot;Open Sans&quot;, sans-serif;" id="slider">
                 <deckgo-slide-title>
                     <h1 slot="title" spellcheck="false">Correspondent Virtual Summit 2020</h1>
                     <section slot="content" spellcheck="false">Opensource.com</section>
                 </deckgo-slide-title>
                 <deckgo-slide-split style="--slide-split-color-start:rgba(0,0,0,1); background: rgb(255, 255, 255);">
-                    <h2 slot="start" spellcheck="false">What you need to know:<div><br>
-                            <div>Video chat on Jitisi (link)</div>
-                            <div>Chat in Jitsi</div>
-                            <div>Swag in the mail</div>
-                            <div>Stickers in the mail and digital files</div>
-                        </div>
-                    </h2>
-                    <h2 slot="end" spellcheck="false">Agenda today:<div><br></div>
-                        <div>Welcome and hello!</div>
-                        <div>One Must Go game</div>
-                        <div>Team presentation</div>
-                        <div>Kahoot game</div>
-                    </h2>
+                    <ol slot="start" spellcheck="true">
+                        <li>Introduce yourself 
+                        </li>
+                        <li>Tell us one thing you love about Opensource.com
+                        </li>
+                        <li>Tell us one things you love about open source
+                        </li>
+                        <li>Take the poll
+                        </li>
+                        <li>Play the One Must Go game
+                        </li>
+                        <li>Chat in Jitsi 
+                        </li>
+                        <li>Leave us a note on the Bulletin Board
+                        </li>
+                    </ol>
+                    <deckgo-lazy-img slot="end" spellcheck="true" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FOpensource.com%20Digital%20Dandelion_1%20Color.png?alt=media&amp;token=017df590-2873-4950-9006-b347722c9cce" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FOpensource.com%20Digital%20Dandelion_1%20Color.png?alt=media&amp;token=017df590-2873-4950-9006-b347722c9cce"></deckgo-lazy-img>
                 </deckgo-slide-split>
-                <deckgo-slide-author img-alt="Jen Wike" img-mode="circle" img-src="https://avatars1.githubusercontent.com/u/7118085?v=4">
-                    <h1 slot="title">Author</h1>
-                    <section slot="author">
-                        <div>Jen Wike</div>
-                    </section>
-                </deckgo-slide-author><button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent; font-size: 1.6rem;">
+                <deckgo-slide-split>
+                    <deckgo-lazy-img slot="start" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FScreen%20Shot%202020-10-01%20at%202.12.44%20PM.png?alt=media&amp;token=69584c9e-7372-4d5c-be1c-bd5a30824dba" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FScreen%20Shot%202020-10-01%20at%202.12.44%20PM.png?alt=media&amp;token=69584c9e-7372-4d5c-be1c-bd5a30824dba"></deckgo-lazy-img>
+                    <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FScreen%20Shot%202020-10-01%20at%202.12.44%20PM.png?alt=media&amp;token=69584c9e-7372-4d5c-be1c-bd5a30824dba" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/YpTs2aVmqRMLI5HFHchkHm2lhww1%2Fassets%2Fimages%2FScreen%20Shot%202020-10-01%20at%202.12.44%20PM.png?alt=media&amp;token=69584c9e-7372-4d5c-be1c-bd5a30824dba" style="--deckgo-lazy-img-height:25%; display: inline-flex; justify-content: center;"></deckgo-lazy-img>
+                </deckgo-slide-split>
+                <deckgo-slide-poll>
+                    <h2 slot="question">Did you start with Opensource.com as a reader or a writer?</h2>
+                    <h3 slot="answer-1">Reader</h3>
+                    <h3 slot="answer-2">Writer</h3>
+                    <div slot="how-to">Go to <a href="https://deckdeckgo.com/poll">deckdeckgo.com/poll</a> and use the code {0}</div>
+                    <div slot="awaiting-votes">Awaiting votes</div>
+                </deckgo-slide-poll>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">One Must Go</h2>
+                    <section slot="content" spellcheck="false">Info about how the game works and what to do.</section>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">Culture &amp; Focus with Jeff</h2>
+                    <section slot="content" spellcheck="false"></section>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">Year in Review with Lauren</h2>
+                    <section slot="content" spellcheck="false"></section>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">What to write about with Seth</h2>
+                    <section slot="content" spellcheck="false"></section>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">Our community with Jen</h2>
+                    <section slot="content" spellcheck="false"></section>
+                </deckgo-slide-content>
+                <deckgo-slide-content>
+                    <h2 slot="title" spellcheck="false">Q&amp;A and Discussion Notes</h2>
+                    <section slot="content" spellcheck="false"></section>
+                </deckgo-slide-content><button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent; font-size: 1.6rem;">
                     <ion-icon src="/jennwike/osdc-virtual-summit-2020/assets/icons/ionicons/more.svg" aria-label="More options"></ion-icon>
                 </button>
             </deckgo-deck>
