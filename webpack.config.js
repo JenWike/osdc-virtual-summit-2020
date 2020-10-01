@@ -28,8 +28,8 @@ const config = {
     devServer: {
         open: true,
         port: 3000,
-        publicPath: '{{DECKDECKGO_BASE_HREF}}',
-        openPage: 'http://localhost:3000{{DECKDECKGO_BASE_HREF}}'
+        publicPath: '/jennwike/osdc-virtual-summit-2020/',
+        openPage: 'http://localhost:3000/jennwike/osdc-virtual-summit-2020/'
     }
 };
 
